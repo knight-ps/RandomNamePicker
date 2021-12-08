@@ -3,6 +3,10 @@
   height: 60px;
 }
 
+.logo{
+ font-size:4em;
+ }
+
 #form {
  font-family:'Merriweather' serif;
  padding-top:10%;

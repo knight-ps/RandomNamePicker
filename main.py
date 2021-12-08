@@ -21,10 +21,15 @@ def home():
 def save_names():
     if request.method == "POST":
         receive = request.form["author"]
-        names = receive.split(",")
-        x = len(names)
-        outcome = (names[random.randint(0, x - 1)])
-        return render_template("winner.html", outcome=outcome)
+        if receive == "":
+            return "<h1>Please enter a name</h1>" \
+                   "<img src='static/red.png'>"
+
+        else:
+            names = receive.split(",")
+            x = len(names)
+            outcome = (names[random.randint(0, x - 1)])
+            return render_template("winner.html", outcome=outcome)
 
 
 
