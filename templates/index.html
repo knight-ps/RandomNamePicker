@@ -6,20 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random Name Picker</title>
     <link rel="stylesheet" type="text/css" href="static/style.css">
-    <link rel="icon" href="static/slott.jpg">
+    <link rel="icon" href="static/rnpicon.jpg">
 </head>
 <body>
-<div class="top-container">
+
 <h1 class="logo">Random Name Picker</h1>
 
+<main>
+    <div class="space">
+    <div  class="use-message">
+    <p class="about">This Random Name Picker Tool  is used to quickly and randomly select a name  from a list of names as winner for a draw.You can use this tool for any contest, raffle, giveaways, credit card roulette etc.</p>
+    </div>
+     </div>
+
+
+   <div class="space-form">
   <form action="/index" method="POST" id="form">
              <label class="name">Enter names below<br>Each name should be separated by a comma.</label><br>
              <input name="author" type="text" id="textbox"><br>
-             <button type="submit">START</button>
-  </form>
 
-<p class="use-message">This Random Name Picker Tool  is used to quickly and randomly select a name  from a list of names as winner for a draw.You can use this tool for any contest, raffle, giveaways, credit card roulette etc.</p>
-</div>
+             <button class="btn" type="submit">START</button>
+
+
+  </form>
+  </div>
+
+</main>
+
 <div class="bottom-container">
     <p class="copy-right">© {{year}} Charles Nana Knight_ps</p>
 </div>
