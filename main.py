@@ -24,9 +24,12 @@ def save_names():
         if receive == "":
             return "<h1>Please enter a name</h1>" \
                    "<img src='static/red.png'>"
-
         else:
             names = receive.split(",")
+        if len(names) == 1:
+            return "<h1>Please enter more than one name</h1>"\
+                    "<img src='static/red.png'>"
+        else:
             x = len(names)
             outcome = (names[random.randint(0, x - 1)])
             return render_template("winner.html", outcome=outcome)
